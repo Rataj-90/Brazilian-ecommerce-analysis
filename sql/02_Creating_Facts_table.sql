@@ -1,39 +1,37 @@
-
 -- FACT_ORDERS
 
 create view fact_orders as
 select 
-o.order_id
-,o.customer_id
-,o.order_status
-,date(o.order_purchase_timestamp)                 as order_purchase_date
-,date(o.order_approved_at)                                 as order_approved_date
-,date(o.order_delivered_carrier_date)         as order_delivered_carrier_date
-,date(o.order_delivered_customer_date)         as order_delivered_customer_date
-,date(o.order_estimated_delivery_date)         as order_estimated_delivery_date
-,op.total_payment_value                                        as total_payment_value
-,ore.review_score                                                as review_score
-,datediff(
-date(o.order_delivered_customer_date) 
-,date(o.order_purchase_timestamp))                as delivery_days
-,datediff(
-date(o.order_delivered_customer_date) 
-,date(o.order_estimated_delivery_date))        as delay_days
-,case
-when date(o.order_delivered_customer_date) > date(o.order_estimated_delivery_date) then 1
-else 0
-end as is_late_delivery
+  o.order_id
+  ,o.customer_id
+  ,o.order_status
+  ,date(o.order_purchase_timestamp)        as order_purchase_date
+  ,date(o.order_approved_at)               as order_approved_date
+  ,date(o.order_delivered_carrier_date)    as order_delivered_carrier_date
+  ,date(o.order_delivered_customer_date)   as order_delivered_customer_date
+  ,date(o.order_estimated_delivery_date)   as order_estimated_delivery_date
+  ,op.total_payment_value                  as total_payment_value
+  ,ore.review_score                        as review_score
+  ,datediff(
+  date(o.order_delivered_customer_date) 
+  ,date(o.order_purchase_timestamp))       as delivery_days
+  ,datediff(
+  date(o.order_delivered_customer_date) 
+  ,date(o.order_estimated_delivery_date))  as delay_days
+  ,case
+  when date(o.order_delivered_customer_date) > date(o.order_estimated_delivery_date) then 1
+  else 0  end                              as is_late_delivery
 from orders o
 left join (
 select
-order_id
-,sum(payment_value) as total_payment_value
+  order_id
+  ,sum(payment_value) as total_payment_value
 from order_payments
 group by order_id ) op        on o.order_id = op.order_id
 left join (
 select
-order_id
-,avg(review_score)         as review_score
+  order_id
+  ,avg(review_score)         as review_score
 from order_reviews
 group by order_id) ore        on o.order_id = ore.order_id
 
