@@ -74,6 +74,7 @@ Relationships between the fact and dimension entities were then configured in Po
 The SQL scripts used to create the analytical views are available here:
 - Create dimension views
 - Create fact views
+<br> [View Data Model](images/data_model.png)
 
 # Dashboard Pages
 
