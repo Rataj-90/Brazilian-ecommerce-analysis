@@ -1,4 +1,4 @@
--- FACT_ORDERS
+-- FACT_ORDERS 
 
 create view fact_orders as
 select 
