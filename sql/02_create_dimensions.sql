@@ -1,4 +1,4 @@
--- DIM DATE
+-- DIM DATE 
 create table dim_date (
 	date_id date primary key
 	,year int
