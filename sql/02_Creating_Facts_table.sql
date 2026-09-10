@@ -53,7 +53,7 @@ from orders o
 left join order_items oi on o.order_id = oi.order_id 
 
 
--- FACT_ORDER_PAYMENTS
+-- FACT_PAYMENTS
 create view fact_payments as
 select
   order_id
