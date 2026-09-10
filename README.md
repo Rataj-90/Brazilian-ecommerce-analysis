@@ -135,10 +135,12 @@ brazilian-ecommerce-analysis/
 │
 └── images/
     ├── data_model.png
-    ├── sales_dashboard.png
-    ├── delivery_dashboard.png
-    ├── customer_dashboard.png
-    ├── portfolio_analysis_dashboard.png
-    └── order_economics_dashboard.png
+    ├── sales_dashboard_overview.png
+    ├── sales_dashboard_2018.png
+    ├── delivery_dashboard_2018.png
+    ├── customer_dashboard_2018.png
+    ├── portfolio_analysis_dashboard_2018.png
+    ├── order_economics_dashboard_2018.png
+    └── insights_dashboard.png
 ```
 
