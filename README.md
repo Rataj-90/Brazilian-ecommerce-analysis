@@ -1,4 +1,4 @@
-# NAZWA PROJEKTU
+# Brazilian e-commerce Analysis
 
 ## Project Overview
 
