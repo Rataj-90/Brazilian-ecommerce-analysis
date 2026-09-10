@@ -122,7 +122,7 @@ Analyzes order value, basket composition, number of items per order and freight 
 - Around 90% of orders contain just one item, keeping average basket size at only 1.14 items per order.
 - Freight costs became a growing burden, rising from 14.9% of order value in 2016 to 17.0% in 2018.
 
-<br> [View insights Dashboard](images/insights_dashboard_2018.png)
+<br> [View insights Dashboard](images/insights_dashboard.png)
 
 # Repository Structure 
 
