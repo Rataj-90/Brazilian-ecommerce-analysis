@@ -81,23 +81,24 @@ The Power BI report consists of five analytical pages, each focused on a differe
 
 **Sales:**
 Provides an overview of revenue, order volume, basket size and sales performance across time, states and product categories.
-<br>View Sales Dashboard
+<br> [View Sales Dashboard](images/sales_dashboard_2018.png)
+<br> [View Sales Dashboard](images/sales_overview_2018.png)
 
 **Delivery:**
 Analyzes delivery time, on-time delivery performance and late deliveries across different periods and locations.
-<br>View Delivery Dashboard
+<br> [View Delivery Dashboard](images/delivery_dashboard_2018.png)
 
 **Customers:**
 Focuses on customer distribution, purchasing behavior, revenue contribution and geographic differences.
-<br>View Customer Dashboard
+<br> [View Customer Dashboard](images/customer_dashboard_2018.png)
 
 **Portfolio Analysis:**
 Evaluates the concentration and contribution of products, categories and sellers to overall business performance.
-<br>View Portfolio Analysis Dashboard
+<br> [View Portfolio Analysis Dashboard](images/portfolio_analysis_dashboard_2018.png)
 
 **Order Economics:**
 Analyzes order value, basket composition, number of items per order and freight costs to better understand order-level economics.
-<br>View Order Economics Dashboard
+<br> [View Order Economics Dashboard](images/order_economics_dashboard_2018.png)
 
 # Key Business Insights
 
@@ -120,6 +121,8 @@ Analyzes order value, basket composition, number of items per order and freight 
 **Order Economics**
 - Around 90% of orders contain just one item, keeping average basket size at only 1.14 items per order.
 - Freight costs became a growing burden, rising from 14.9% of order value in 2016 to 17.0% in 2018.
+
+<br> [View insights Dashboard](images/insights_dashboard_2018.png)
 
 # Repository Structure 
 
