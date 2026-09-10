@@ -82,7 +82,7 @@ The Power BI report consists of five analytical pages, each focused on a differe
 **Sales:**
 Provides an overview of revenue, order volume, basket size and sales performance across time, states and product categories.
 <br> [View Sales Dashboard](images/sales_dashboard_2018.png)
-<br> [View Sales Dashboard](images/sales_overview.png)
+<br> [View Sales Dashboard Overview](images/sales_dashboard_overview.png)
 
 **Delivery:**
 Analyzes delivery time, on-time delivery performance and late deliveries across different periods and locations.
