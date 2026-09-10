@@ -60,7 +60,7 @@ select
   ,payment_sequential
   ,payment_type
   ,payment_installments
-  , payment_value
+  ,payment_value
 from order_payments
 
 
